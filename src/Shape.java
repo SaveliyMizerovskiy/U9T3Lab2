@@ -11,7 +11,8 @@ public class Shape
   // public constants
   public static final String RECTANGLE = "Rectangle"; // constant for rectangle
   public static final String OVAL = "Oval";
-  public static final String ARC = "Arc";// constant for oval
+  public static final String ARC = "Arc";
+  public static final String LINE = "Line";// constant for oval
 
   // private instance variables
   private Color color; // color to draw shape in
@@ -99,6 +100,14 @@ public class Shape
   {
     System.out.println("This method should be overridden by subclasses because");
     System.out.println("a generic Shape object does not know how to draw itself!");
+  }
+
+  public Point getP1() {
+    return p1;
+  }
+
+  public Point getP2() {
+    return p2;
   }
 }
 
